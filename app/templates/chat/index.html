@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% block chat %}
+<div class="container">
+    <div class="card">
+        <div class="card-header bg-stf ft-stf">
+            Stefnotes
+        </div>
+        <div class="card-body">
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <a class="btn btn-primary" href="/">Menu Principal</a>
+                <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#ModalChat">Scripts
+                    de Atendimento</button>
+            </div>
+        </div>
+        <div class="card-footer bg-stf">
+            &#169 copyright
+        </div>
+    </div>
+</div>
+<!-- Modal Chat -->
+<div class="modal fade" id="ModalChat" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Scripts de Atendimento</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <label class="form-label">Iniciar Atendimento via Chat</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-describedby="button-addon2"
+                        value="Service Desk Globo, bom dia. Em que posso ajudar?" disabled>
+                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Copiar</button>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-describedby="button-addon2"
+                        value="Service Desk Globo, boa tarde. Em que posso ajudar?" disabled>
+                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Copiar</button>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-describedby="button-addon2"
+                        value="Service Desk Globo, boa noite. Em que posso ajudar?" disabled>
+                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Copiar</button>
+                </div>
+                <label class="form-label">Telefones do Service Desk Globo</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-describedby="button-addon2"
+                        value="Para falar com o Service Desk, ligue para (21) 2155-3911 (Ramal 3911) ou 0800 728 4855, caso esteja fora da Globo."
+                        disabled>
+                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Copiar</button>
+                </div>
+                <label class="form-label">Acesso ao Globo Service</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-describedby="button-addon2"
+                        value="Acesse o Globo Service através do link - http://globoservice.service-now.com" disabled>
+                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Copiar</button>
+                </div>
+                <label class="form-label">Acesso ao Resolva Aqui</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-describedby="button-addon2"
+                        value="Acesse o Resolva Aqui através do link - http://resolvaaqui.globo.com" disabled>
+                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Copiar</button>
+                </div>
+                <label class="form-label">Encerramento por falta de interação</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-describedby="button-addon2"
+                        value="Por falta de interação o atendimento será encerrado." disabled>
+                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Copiar</button>
+                </div>
+                <label class="form-label">Encerramento</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-describedby="button-addon2"
+                        value="Service Desk Globo agradece o contato, tenha um ótimo dia!" disabled>
+                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Copiar</button>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-describedby="button-addon2"
+                        value="Service Desk Globo agradece o contato, tenha uma ótima tarde!" disabled>
+                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Copiar</button>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-describedby="button-addon2"
+                        value="Service Desk globo agradece o contato, tenha uma ótima noite!" disabled>
+                    <button class="btn btn-outline-primary" type="button" id="button-addon2">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

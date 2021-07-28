@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <title>Stefnotes</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#0B1641">
+    <meta name="description" content="Stefnotes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#0B1641">
+    <!-- Required link tags -->
+    <link rel="manifest" href="{{ url_for('static', filename='manifest.json') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon">
+    <link rel="canonical" href="https://www.stefnotes.com.br">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/icons/icon-152x152.png') }}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <!-- Stefnotes CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="bg-secondary">
+    <!-- Flask block home -->
+    {% block index %}
+    {% endblock %}
+    <!-- Flask block chat -->
+    {% block chat %}
+    {% endblock %}
+    <!-- Flask block emails -->
+    {% block emails %}
+    {% endblock %}
+    <!-- Flask block rotina -->
+    {% block rotina %}
+    {% endblock %}
+    <!-- Flask block pendente -->
+    {% block pendente %}
+    {% endblock %}
+    <!-- Flask block encerramento -->
+    {% block encerramento %}
+    {% endblock %}
+    <!-- Optional JavaScript -->
+    <!-- Service Worker JS -->
+    <script src="{{ url_for('static', filename='js/serviceworker.js') }}"></script>
+    <!-- Popper.js and Bootstrap JS -->
+    <script src="{{ url_for('static', filename='js/popper.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+    <!-- Datetimepicker JS -->
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/datetimepicker.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/datetimepicker-pt-BR.js') }}"></script>
+    <!-- Datetimepicker JS -->
+    <script src="{{ url_for('static', filename='js/stefnotes.js') }}"></script>
+</body>
+
+</html>
